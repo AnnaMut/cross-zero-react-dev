@@ -1,0 +1,16 @@
+language: node_js
+
+node_js:
+  - "8.11"
+
+script: webpack-dev-server --mode development --open --hot
+
+deploy:
+  provider: pages
+  cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: build
+  on:
+    branch: master
+
+
