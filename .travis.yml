@@ -12,5 +12,5 @@ deploy:
   local_dir: build
   on:
     branch: master
-
+  travis_wait 20
 
