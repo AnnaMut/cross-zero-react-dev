@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - "8.11"
 
-script: webpack-dev-server --mode development --open --hot
+script: webpack --mode production
 
 deploy:
   provider: pages
@@ -12,5 +12,5 @@ deploy:
   local_dir: build
   on:
     branch: master
-  travis_wait 20
+
 
